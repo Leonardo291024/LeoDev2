@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de desarrollador">
+  <title>LeoDev · Desarrollador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#" class="header__logo">LeoDev</a>
+      <button class="header__toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav" id="mainNav" role="navigation">
+        <ul class="header__menu">
+          <li><a href="#hero" class="header__link active">Inicio</a></li>
+          <li><a href="#about" class="header__link">Sobre mí</a></li>
+          <li><a href="#skills" class="header__link">Habilidades</a></li>
+          <li><a href="#projects" class="header__link">Proyectos</a></li>
+          <li><a href="#contact" class="header__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <span class="hero__badge">Desarrollador FrontEnd</span>
+        <h1 class="hero__title">
+          <span class="typing" id="typingText"></span><span class="cursor" id="cursor">|</span>
+        </h1>
+        <p class="hero__description">
+          Construyo experiencias digitales modernas con código limpio,
+          accesible y bien estructurado.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contact" class="btn btn--outline">Contactar</a>
+        </div>
+        <div class="hero__scroll">
+          <span>Desplázate</span>
+          <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+            <path d="M8 0v21M1 14l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">Sobre mí</h2>
+        <p class="section__subtitle reveal">Un poco de mi trayectoria</p>
+        <div class="about__content reveal">
+          <p>
+            Soy desarrollador apasionado por crear aplicaciones web modernas,
+            escalables y centradas en el usuario. Me especializo en el ecosistema
+            JavaScript y disfruto transformar ideas complejas en productos
+            funcionales y estéticamente cuidados.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal">Habilidades</h2>
+        <p class="section__subtitle reveal">Tecnologías con las que trabajo</p>
+        <div class="skills__grid">
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Frontend</h3>
+            <ul class="skill-category__list">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+            </ul>
+          </div>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Herramientas</h3>
+            <ul class="skill-category__list">
+              <li>Git & GitHub</li>
+              <li>Figma</li>
+              <li>VS Code</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal">Proyectos</h2>
+        <p class="section__subtitle reveal">Algunos trabajos recientes</p>
+        <div class="projects__grid" id="projectsGrid">
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal">Contacto</h2>
+        <p class="section__subtitle reveal">Hablemos de tu próximo proyecto</p>
+        <form class="contact__form" id="contactForm">
+          <div class="contact__field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="contact__field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="contact__field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>&copy; 2026 LeoDev. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
